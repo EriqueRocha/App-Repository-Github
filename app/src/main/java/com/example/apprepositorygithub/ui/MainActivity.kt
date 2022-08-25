@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
         setSupportActionBar(binding.toolbar)
         binding.rvRepos.adapter =adapter
 
-        viewModel.getRepoList("EriqueRocha") //repositório que será mostrado ao iniciar o APP
+        viewModel.getRepoList("EriqueRocha")  //repositório que será mostrado ao iniciar o APP
 
         viewModel.repos.observe(this) {
             when (it) {
